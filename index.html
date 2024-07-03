@@ -3,12 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CreateIT - Mobile Development Services</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="style/css/style.css">
 </head>
 <body>
-    
+    <header>
+        <nav>
+            <div class="logo">CreateIT</div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
+    <main class="swiper-container">
+        <div class="swiper-wrapper">
+            <section class="swiper-slide" id="home">
+                <h1>Welcome to CreateIT</h1>
+                <p>Your partner for mobile development solutions</p>
+            </section>
+
+            <section class="swiper-slide" id="services">
+                <h2>Our Services</h2>
+                <!-- Add service items here -->
+            </section>
+
+            <section class="swiper-slide" id="portfolio">
+                <h2>Our Portfolio</h2>
+                <!-- Add portfolio items here -->
+            </section>
+
+            <section class="swiper-slide" id="contact">
+                <h2>Contact Us</h2>
+                <!-- Add contact form or information here -->
+            </section>
+        </div>
+        <!-- Add pagination -->
+        <div class="swiper-pagination"></div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 CreateIT. All rights reserved.</p>
+    </footer>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/swiper.js"></script>
 </body>
 </html>
