@@ -1,0 +1,15 @@
+.swiper-container {
+    height: 100vh; // Full viewport height
+}
+
+.swiper-slide {
+    @include flex-center;
+    flex-direction: column;
+    height: 100%;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.swiper-pagination-bullet {
+    background: $primary-color;
+}
