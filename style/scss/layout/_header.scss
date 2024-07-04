@@ -1,0 +1,45 @@
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background: rgba($primary-color, 0.8);
+    color: $light-color;
+    padding: 1rem 0;
+  
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    #branding {
+      h1 {
+        .highlight {
+          color: $secondary-color;
+        }
+      }
+    }
+  
+    nav {
+      ul {
+        list-style: none;
+        display: flex;
+  
+        li {
+          margin-left: 1rem;
+  
+          a {
+            color: $light-color;
+            text-decoration: none;
+            @include transitions(color);
+  
+            &:hover {
+              color: $secondary-color;
+            }
+          }
+        }
+      }
+    }
+  }
