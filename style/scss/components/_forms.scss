@@ -1,0 +1,26 @@
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+  
+    input, textarea {
+      margin-bottom: 1rem;
+      padding: 0.5rem;
+      border: 1px solid $primary-color;
+    }
+  
+    button {
+      background: $secondary-color;
+      color: $light-color;
+      border: none;
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+      @include transitions(background-color);
+  
+      &:hover {
+        background-color: darken($secondary-color, 10%);
+      }
+    }
+  }
