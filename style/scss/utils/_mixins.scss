@@ -1,0 +1,21 @@
+// Mixin for centering content using flexbox
+@mixin flex-center {
+    display: flex;
+    justify-content: center; // Centers content horizontally
+    align-items: center;     // Centers content vertically
+}
+
+// Mixin for creating smooth transitions
+@mixin transition($property: all, $duration: 0.3s, $timing: ease-in-out) {
+    transition: $property $duration $timing;
+}
+// Parameters:
+// $property: The CSS property to transition (default: all)
+// $duration: How long the transition should take (default: 0.3s)
+// $timing: The timing function of the transition (default: ease-in-out)
+//
+// Usage example:
+// .my-button {
+//     @include transition(background-color, 0.5s, ease);
+// }
+// This will create a smooth transition for the background-color property over 0.5 seconds with an 'ease' timing function
