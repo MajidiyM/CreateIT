@@ -1,45 +1,159 @@
-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
-    background: rgba($primary-color, 0.8);
-    color: $light-color;
-    padding: 1rem 0;
-  
-    .container {
+@include xl {
+  .mob {
+    display: none;
+  }
+  .desktop {
+    display: block;
+    .navbar {
       display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-  
-    #branding {
-      h1 {
-        .highlight {
-          color: $secondary-color;
+      .logo {
+        flex-grow: 1;
+        a {
+          img {
+            width: 140px;
+          }
+        }
+      }
+      .navbar-body {
+        flex-grow: 2;
+        .navbar-nav {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-evenly;
+          .nav-item {
+            .nav-link {
+              text-decoration: none;
+              color: $text-color;
+              font-size: 1.25rem;
+              &.active {
+                color: $primary-color;
+              }
+            }
+          }
+        }
+      }
+      .navbar-footer {
+        display: flex;
+        justify-content: center;
+        flex-grow: 1;
+        .navbar-button {
+          padding: 10px 15px;
+          border: 1px solid $primary-color;
+          border-radius: 20px;
+          font-size: 1.25rem;
+          background-color: transparent;
+          color: white;
+          transition: .6s ease-in-out;
+          font-weight: 400;
+          &:hover {
+            background-color: $primary-color;
+            color: black;
+          }
         }
       }
     }
-  
-    nav {
-      ul {
-        list-style: none;
+  }
+}
+
+@include lg {
+  .mob {
+    display: none;
+  }
+  .desktop {
+    display: block;
+    .navbar {
+      display: flex;
+      .logo {
+        flex-grow: 1;
+        a {
+          img {
+            width: 140px;
+          }
+        }
+      }
+      .navbar-body {
+        flex-grow: 2;
+        .navbar-nav {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-evenly;
+          .nav-item {
+            .nav-link {
+              text-decoration: none;
+              color: $text-color;
+              font-size: 1.25rem;
+              &.active {
+                color: $primary-color;
+              }
+            }
+          }
+        }
+      }
+      .navbar-footer {
         display: flex;
-  
-        li {
-          margin-left: 1rem;
-  
-          a {
-            color: $light-color;
-            text-decoration: none;
-            @include transitions(color);
-  
-            &:hover {
-              color: $secondary-color;
+        justify-content: center;
+        flex-grow: 1;
+        .navbar-button {
+          padding: 10px 15px;
+          border: 1px solid $primary-color;
+          border-radius: 20px;
+          font-size: 1.25rem;
+          background-color: transparent;
+          color: white;
+          transition: .6s ease-in-out;
+          font-weight: 400;
+          &:hover {
+            background-color: $primary-color;
+            color: black;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include md {
+  .desktop {
+    display: none;
+  }
+  .mob{
+    display: block;
+    .navbar {
+      background-color: transparent;
+      .container-fluid {
+        .navbar-brand {
+          color: $primary-color;
+          font-size: 25px;
+          letter-spacing: 2px;
+        }
+        .navbar-toggler {
+          border: none;
+          .navbar-toggler-icon {
+            width: 30px;
+          }
+        }
+        .offcanvas {
+          width: 100%;
+          background: $background-color;
+          .offcanvas-header {
+            justify-content: end;
+          }
+          .offcanvas-body {
+            .navbar-nav {
+              .nav-item {
+                a {
+                  font-size: 3rem;
+                  &.active {
+                    color: $primary-color;
+                  }
+                }
+              }
             }
           }
         }
       }
     }
   }
+}
+
+

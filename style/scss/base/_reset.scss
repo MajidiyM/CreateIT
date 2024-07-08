@@ -2,13 +2,16 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    // outline: 1px solid red;
+    
 }
 
 body {
-    font-family: $font-stack;
+    max-width: 1440px;
+    margin: auto;
     line-height: 1.6;
-    color: $dark-color;
     overflow: hidden;
+    background-color: $background-color;
 }
 
 .container {
