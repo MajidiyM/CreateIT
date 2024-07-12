@@ -1,20 +1,24 @@
-.service-boxes {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 2rem;
-  
-    .box {
-      flex: 1;
-      padding: 1rem;
-      text-align: center;
-  
-      img {
-        width: 80px;
-        margin-bottom: 1rem;
+@include xl {
+  .services {
+      h1 {
+          color: $text-color;
+          text-align: center;
       }
-  
-      h3 {
-        margin-bottom: 0.5rem;
-      }
-    }
   }
+}
+@include lg {
+  .services {
+      h1 {
+          color: $text-color;
+          text-align: center;
+      }
+  }
+}
+@include md {
+  .services {
+      h1 {
+          color: $text-color;
+          text-align: center;
+      }
+  }
+}

@@ -1,11 +1,24 @@
-.portfolio-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
-    margin-top: 2rem;
-  
-    .portfolio-item {
-      padding: 1rem;
-      text-align: center;
-    }
+@include xl {
+  .portfolio {
+      h1 {
+          color: $text-color;
+          text-align: center;
+      }
   }
+}
+@include lg {
+  .portfolio {
+      h1 {
+          color: $text-color;
+          text-align: center;
+      }
+  }
+}
+@include md {
+  .portfolio {
+      h1 {
+          color: $text-color;
+          text-align: center;
+      }
+  }
+}
