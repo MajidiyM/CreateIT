@@ -22,6 +22,58 @@ body {
   display: none;
 }
 
+@media (min-width: 1200px) {
+  .mob {
+    display: none;
+  }
+  .desktop {
+    display: block;
+  }
+  .desktop .navbar {
+    display: flex;
+  }
+  .desktop .navbar .logo {
+    flex-grow: 1;
+  }
+  .desktop .navbar .logo a img {
+    width: 140px;
+  }
+  .desktop .navbar .navbar-body {
+    flex-grow: 2;
+  }
+  .desktop .navbar .navbar-body .navbar-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .desktop .navbar .navbar-body .navbar-nav .nav-item .nav-link {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.25rem;
+  }
+  .desktop .navbar .navbar-body .navbar-nav .nav-item .nav-link.active {
+    color: rgb(255, 181, 82);
+  }
+  .desktop .navbar .navbar-footer {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+  }
+  .desktop .navbar .navbar-footer .navbar-button {
+    padding: 10px 15px;
+    border: 1px solid rgb(255, 181, 82);
+    border-radius: 20px;
+    font-size: 1.25rem;
+    background-color: transparent;
+    color: white;
+    transition: 0.6s ease-in-out;
+    font-weight: 400;
+  }
+  .desktop .navbar .navbar-footer .navbar-button:hover {
+    background-color: rgb(255, 181, 82);
+    color: black;
+  }
+}
 @media (max-width: 1200px) {
   .mob {
     display: none;
@@ -74,7 +126,7 @@ body {
     color: black;
   }
 }
-@media (min-width: 992px) {
+@media (max-width: 992px) {
   .mob {
     display: none;
   }
@@ -197,7 +249,7 @@ form button {
   display: none;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
   .section {
     height: 85vh;
     position: relative;
@@ -236,12 +288,96 @@ form button {
   }
 }
 @media (max-width: 1200px) {
+  .section {
+    height: 85vh;
+    position: relative;
+  }
+  .section .fp-slides {
+    height: 93%;
+  }
+  .section .fp-controlArrow {
+    top: 92%;
+  }
+  .section .fp-controlArrow.fp-prev {
+    border: none;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    background-image: url("/assets/images/leftArrow.png");
+    background-repeat: no-repeat;
+  }
+  .section .fp-controlArrow.fp-next {
+    border: none;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-image: url("/assets/images/rightArrow.png");
+  }
+  .section .fp-slidesNav {
+    position: absolute;
+    bottom: 10px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+  .section .fp-slidesNav ul li a span {
+    background: rgb(255, 181, 82);
+  }
+}
+@media (max-width: 992px) {
+  .section {
+    height: 85vh;
+    position: relative;
+  }
+  .section .fp-slides {
+    height: 93%;
+  }
+  .section .fp-controlArrow {
+    top: 92%;
+  }
+  .section .fp-controlArrow.fp-prev {
+    border: none;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    background-image: url("/assets/images/leftArrow.png");
+    background-repeat: no-repeat;
+  }
+  .section .fp-controlArrow.fp-next {
+    border: none;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-image: url("/assets/images/rightArrow.png");
+  }
+  .section .fp-slidesNav {
+    position: absolute;
+    bottom: 10px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+  .section .fp-slidesNav ul li a span {
+    background: rgb(255, 181, 82);
+  }
+}
+@media (max-width: 768px) {
+  .section {
+    height: 100vh;
+  }
+  .section .fp-controlArrow {
+    display: none;
+  }
+}
+@media (max-width: 1200px) {
   .home h1 {
     color: #ffffff;
     text-align: center;
   }
 }
-@media (min-width: 992px) {
+@media (max-width: 992px) {
   .home h1 {
     color: #ffffff;
     text-align: center;
@@ -259,7 +395,7 @@ form button {
     text-align: center;
   }
 }
-@media (min-width: 992px) {
+@media (max-width: 992px) {
   .services h1 {
     color: #ffffff;
     text-align: center;
@@ -277,7 +413,7 @@ form button {
     text-align: center;
   }
 }
-@media (min-width: 992px) {
+@media (max-width: 992px) {
   .portfolio h1 {
     color: #ffffff;
     text-align: center;
@@ -295,7 +431,7 @@ form button {
     text-align: center;
   }
 }
-@media (min-width: 992px) {
+@media (max-width: 992px) {
   .contacts h1 {
     color: #ffffff;
     text-align: center;

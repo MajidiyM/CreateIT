@@ -1,3 +1,59 @@
+@include xl-more {
+  .mob {
+    display: none;
+  }
+  .desktop {
+    display: block;
+    .navbar {
+      display: flex;
+      .logo {
+        flex-grow: 1;
+        a {
+          img {
+            width: 140px;
+          }
+        }
+      }
+      .navbar-body {
+        flex-grow: 2;
+        .navbar-nav {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-evenly;
+          .nav-item {
+            .nav-link {
+              text-decoration: none;
+              color: $text-color;
+              font-size: 1.25rem;
+              &.active {
+                color: $primary-color;
+              }
+            }
+          }
+        }
+      }
+      .navbar-footer {
+        display: flex;
+        justify-content: center;
+        flex-grow: 1;
+        .navbar-button {
+          padding: 10px 15px;
+          border: 1px solid $primary-color;
+          border-radius: 20px;
+          font-size: 1.25rem;
+          background-color: transparent;
+          color: white;
+          transition: .6s ease-in-out;
+          font-weight: 400;
+          &:hover {
+            background-color: $primary-color;
+            color: black;
+          }
+        }
+      }
+    }
+  }
+}
 @include xl {
   .mob {
     display: none;

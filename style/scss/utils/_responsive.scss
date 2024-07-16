@@ -18,13 +18,18 @@ $breakpoint-xl: 1200px;
 }
 
 @mixin lg {
-    @media (min-width: #{$breakpoint-lg} ) {
+    @media (max-width: #{$breakpoint-lg} ) {
         @content;
     }
 }
 
 @mixin xl {
     @media (max-width: #{$breakpoint-xl}) {
+        @content;
+    }
+}
+@mixin xl-more {
+    @media (min-width: #{$breakpoint-xl}) {
         @content;
     }
 }
