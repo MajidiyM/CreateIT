@@ -4,8 +4,9 @@ $(document).ready(function() {
         autoScrolling: true,
         scrollHorizontally: true,
         navigation: true,
-        navigationPosition: 'right',
-        anchors: ['section1', 'section2', 'section3', 'section4'],
-        menu: '#menu'
+        navigationPosition: 'bottom',
+        anchors: ['home', 'services', 'portfolio', 'contacts'],
+        menu: '#menu',
+        slidesNavigation: true,
     });
 });

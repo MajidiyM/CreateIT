@@ -1,0 +1,51 @@
+#fp-nav {
+  display: none;
+}
+@include lg {
+  .section {
+    height: 85vh;
+    position: relative;
+    .fp-slides {
+      height: 93%;
+    }
+
+    .fp-controlArrow {
+      top: 92%;
+    }
+
+    .fp-controlArrow.fp-prev {
+        border: none;
+        width: 100px;
+        height: 100px;
+        cursor: pointer;
+        background-image: url('/assets/images/leftArrow.png');
+        background-repeat: no-repeat;
+    }
+
+    .fp-controlArrow.fp-next {
+        border: none;
+        width: 100px;
+        height: 100px;
+        cursor: pointer;
+        background-repeat: no-repeat;
+        background-image: url('/assets/images/rightArrow.png');
+    }
+
+    .fp-slidesNav {
+      position: absolute;
+      bottom: 10px;
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      ul {
+        li {
+          a {
+            span {
+              background: $primary-color;
+            }
+          }
+        }
+      }
+    }
+  }
+}

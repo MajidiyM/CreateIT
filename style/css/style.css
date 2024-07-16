@@ -18,6 +18,10 @@ body {
   overflow: hidden;
 }
 
+.fp-watermark {
+  display: none;
+}
+
 @media (max-width: 1200px) {
   .mob {
     display: none;
@@ -189,6 +193,48 @@ form button {
   cursor: pointer;
 }
 
+#fp-nav {
+  display: none;
+}
+
+@media (min-width: 992px) {
+  .section {
+    height: 85vh;
+    position: relative;
+  }
+  .section .fp-slides {
+    height: 93%;
+  }
+  .section .fp-controlArrow {
+    top: 92%;
+  }
+  .section .fp-controlArrow.fp-prev {
+    border: none;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    background-image: url("/assets/images/leftArrow.png");
+    background-repeat: no-repeat;
+  }
+  .section .fp-controlArrow.fp-next {
+    border: none;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-image: url("/assets/images/rightArrow.png");
+  }
+  .section .fp-slidesNav {
+    position: absolute;
+    bottom: 10px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+  .section .fp-slidesNav ul li a span {
+    background: rgb(255, 181, 82);
+  }
+}
 @media (max-width: 1200px) {
   .home h1 {
     color: #ffffff;
