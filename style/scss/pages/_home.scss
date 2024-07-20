@@ -1,24 +1,186 @@
-@include xl {
-    .home {
+@include xl-more {
+  .home {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    .home-hero {
+      height: 70%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      .mini-logo {
+        width: 100%;
+        text-align: center;
+      }
+      .hero-title {
+        margin: 10px 0 0 0;
+        text-align: center;
         h1 {
-            color: $text-color;
-            text-align: center;
+          color: $primary-color;
+          font-size: 12.875rem;
+          line-height: 1.1em;
+          font-weight: 700;
+        }
+      }
+    }
+
+    .home-descr {
+      height: 300px;
+      display: flex;
+      align-items: center;
+      .home-descr-title {
+        width: 60%;
+        margin: auto;
+        h1 {
+          color: $primary-color;
+          font-size: 3rem;
+          font-weight: 700;
+        }
+        p {
+          color: $text-color;
+          font-size: 1.25rem;
+          line-height: 1.5em;
+        }
+      }
+    }
+
+    .img-divider {
+        display: flex;
+        width: 90%;
+        height: 50vh;
+        margin: auto;
+        align-items: center;
+        justify-content: space-evenly;
+        img {
+            width: 70px;
         }
     }
+
+    .home-advantages {
+        width: 100%;
+        margin: auto;
+        padding: 20px 0;
+        display: flex;
+        align-items: center;
+        gap: 60px;
+        place-content: center;
+        .home-advantages-descr {
+            align-items: flex-start;
+            display: flex;
+            flex-flow: column;
+            gap: 20px;
+            width: 31%;
+            h2 {
+                color: $primary-color;
+                font-size: 2rem;
+                font-weight: 700;
+            }
+            p {
+                color: $text-color;
+            }
+        }
+        .home-advantages-img {
+        }
+    }
+
+    .home-services {
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+        margin-top: 40px;
+
+        .home-card {
+            padding: 20px;
+            border: 1px solid $primary-color;
+            display: flex;
+            flex-flow: column;
+            justify-content: space-evenly;
+            .home-card-image {
+                flex-grow: 1;
+                margin-bottom: 5px;
+                img {
+                    width: 250px;
+                    height: 300px;
+                }
+            }
+            .home-card-descr {
+                flex-grow: 1;
+                width: 250px;
+                padding: 20px 10px ;
+                h3 {
+                    color: $text-color;
+                }
+            }
+        }
+    }
+
+    .footer {
+        width: 100%;
+        display: flex;
+        flex-flow: column;
+        gap: 20px;
+        .footer-text {
+            text-align: center;
+            h2 {
+                color: $primary-color;
+                font-size: 48px;
+                font-weight: 700;
+            }
+            p {
+                width: 400px;
+                margin: auto;
+                color: $text-color;
+                line-height: 1.5em;
+            }
+        }
+        .footer-buttons {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            gap: 20px;
+            .footer-start-button {
+                all: unset;
+                background: none;
+                color: $primary-color;
+                border-radius: 15px;
+                border: 1px solid $primary-color;
+                padding: 10px 20px;
+                
+            }
+            .footer-more-button {
+                all: unset;
+                background: none;
+                color: $text-color;
+                padding: 15px;
+                border-radius: 15px;
+                border: 1px solid $text-color;
+                padding: 10px 20px;
+            }
+        }
+    }
+  }
+}
+@include xl {
+  .home {
+    h1 {
+      color: $text-color;
+      text-align: center;
+    }
+  }
 }
 @include lg {
-    .home {
-        h1 {
-            color: $text-color;
-            text-align: center;
-        }
+  .home {
+    h1 {
+      color: $text-color;
+      text-align: center;
     }
+  }
 }
 @include md {
-    .home {
-        h1 {
-            color: $text-color;
-            text-align: center;
-        }
+  .home {
+    h1 {
+      color: $text-color;
+      text-align: center;
     }
+  }
 }

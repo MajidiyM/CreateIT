@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
     // outline: 1px solid red;
-    
 }
 
 body {
@@ -22,4 +21,12 @@ body {
 
 .fp-watermark {
     display: none;
+}
+
+h1, h2, h3 {
+    font-family: $font-stack;
+}
+
+p {
+    font-family: $font-stack;
 }
