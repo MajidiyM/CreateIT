@@ -1,24 +1,75 @@
-@include xl {
+@include xl-more {
   .services {
-      h1 {
-          color: $text-color;
-          text-align: center;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    .services-hero {
+      height: 70%;
+      display: flex;
+      justify-content: center;
+      .services-hero-title {
+        color: $primary-color;
+        width: 100%;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        h1 {
+          font-size: 10rem;
+        }
+        h3 {
+          font-size: 3rem;
+        }
       }
-  }
-}
-@include lg {
-  .services {
-      h1 {
-          color: $text-color;
-          text-align: center;
+      .services-hero-img {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
       }
-  }
-}
-@include md {
-  .services {
-      h1 {
-          color: $text-color;
-          text-align: center;
+    }
+
+    .services-type {
+      .services-list {
+        width: 100%;
+        padding: 20px 0;
+        display: flex;
+        align-items: center;
+        gap: 60px;
+        place-content: center;
+        .services-list-descr {
+          align-items: flex-start;
+          display: flex;
+          flex-flow: column;
+          gap: 20px;
+          width: 31%;
+          h2 {
+            color: $primary-color;
+            font-size: 2rem;
+            font-weight: 700;
+          }
+          p {
+            color: $text-color;
+          }
+        }
       }
+    }
+    
+    .services-highlights {
+      text-align: center;
+      width: 40%;
+      margin: auto;
+      display: flex;
+      flex-flow: column;
+      gap: 10px;
+      h2 {
+        color: $primary-color;
+        font-weight: 700;
+        font-size: 2.5rem;
+      }
+      p {
+        color: $text-color;
+        font-size: 1.3rem;
+      }
+    }
   }
 }

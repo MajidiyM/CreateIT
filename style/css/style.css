@@ -18,6 +18,10 @@ body {
   overflow: hidden;
 }
 
+.fp-table {
+  height: 100%;
+}
+
 .fp-watermark {
   display: none;
 }
@@ -437,7 +441,6 @@ form button {
   }
   .home .home-advantages {
     width: 100%;
-    margin: auto;
     padding: 20px 0;
     display: flex;
     align-items: center;
@@ -550,22 +553,75 @@ form button {
     text-align: center;
   }
 }
-@media (max-width: 1200px) {
-  .services h1 {
-    color: #ffffff;
-    text-align: center;
+@media (min-width: 1200px) {
+  .services {
+    padding: 0;
+    margin: 0;
+    height: 100%;
   }
-}
-@media (max-width: 992px) {
-  .services h1 {
-    color: #ffffff;
-    text-align: center;
+  .services .services-hero {
+    height: 70%;
+    display: flex;
+    justify-content: center;
   }
-}
-@media (max-width: 768px) {
-  .services h1 {
+  .services .services-hero .services-hero-title {
+    color: #fa7b2b;
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+  }
+  .services .services-hero .services-hero-title h1 {
+    font-size: 10rem;
+  }
+  .services .services-hero .services-hero-title h3 {
+    font-size: 3rem;
+  }
+  .services .services-hero .services-hero-img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .services .services-type .services-list {
+    width: 100%;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    place-content: center;
+  }
+  .services .services-type .services-list .services-list-descr {
+    align-items: flex-start;
+    display: flex;
+    flex-flow: column;
+    gap: 20px;
+    width: 31%;
+  }
+  .services .services-type .services-list .services-list-descr h2 {
+    color: #fa7b2b;
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  .services .services-type .services-list .services-list-descr p {
     color: #ffffff;
+  }
+  .services .services-highlights {
     text-align: center;
+    width: 40%;
+    margin: auto;
+    display: flex;
+    flex-flow: column;
+    gap: 10px;
+  }
+  .services .services-highlights h2 {
+    color: #fa7b2b;
+    font-weight: 700;
+    font-size: 2.5rem;
+  }
+  .services .services-highlights p {
+    color: #ffffff;
+    font-size: 1.3rem;
   }
 }
 @media (max-width: 1200px) {
