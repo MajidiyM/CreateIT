@@ -1,24 +1,105 @@
-@include xl {
+@include xl-more {
   .portfolio {
-      h1 {
-          color: $text-color;
-          text-align: center;
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+
+    .portfolio-hero {
+      height: 70%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .portfolio-hero-title {
+        color: $primary-color;
+        width: 100%;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        h1 {
+          font-size: 10rem;
+          font-weight: 700;
+        }
+        h3 {
+          font-size: 3rem;
+        }
       }
-  }
-}
-@include lg {
-  .portfolio {
-      h1 {
+    }
+
+    .portfolio-descr {
+      height: 300px;
+      display: flex;
+      align-items: center;
+      .portfolio-descr-title {
+        width: 60%;
+        margin: auto;
+        h1 {
+          color: $primary-color;
+          font-size: 3rem;
+          font-weight: 700;
+        }
+        p {
           color: $text-color;
-          text-align: center;
+          font-size: 1.25rem;
+          line-height: 1.5em;
+        }
       }
-  }
-}
-@include md {
-  .portfolio {
-      h1 {
-          color: $text-color;
-          text-align: center;
+    }
+
+    .portfolio-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 20px;
+      justify-content: center;
+      width: 80%;
+      margin: auto;
+      .portfolio-grid-item {
+        padding: 10px;
+        .portfolio-grid-item-img {
+          margin-bottom: 10px;
+          img {
+            width: 250px;
+            height: 300px;
+          }
+        }
+        .portfolio-grid-item-title {
+          h2 {
+            color: $primary-color;
+            font-size: 1.5rem;
+            text-align: center;
+          }
+        }
       }
+    }
+
+    .img-divider {
+      display: flex;
+      width: 90%;
+      height: 50vh;
+      margin: auto;
+      align-items: center;
+      justify-content: space-evenly;
+      img {
+        width: 70px;
+      }
+    }
+
+    .portfolio-highlights {
+      text-align: center;
+      width: 40%;
+      margin: auto;
+      display: flex;
+      flex-flow: column;
+      gap: 10px;
+      h2 {
+        color: $primary-color;
+        font-weight: 700;
+        font-size: 2.5rem;
+      }
+      p {
+        color: $text-color;
+        font-size: 1.3rem;
+      }
+    }
   }
 }
