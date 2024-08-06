@@ -1,8 +1,11 @@
 // Breakpoints
 $breakpoint-sm: 576px;
-$breakpoint-md: 768px;
+$breakpoint-md: 767px;
 $breakpoint-lg: 992px;
 $breakpoint-xl: 1200px;
+
+// Height Breakpoints
+$breakpoint-height: 890px;
 
 // Mixins for media queries
 @mixin sm {
@@ -31,6 +34,14 @@ $breakpoint-xl: 1200px;
 @mixin xl-more {
     @media (min-width: #{$breakpoint-xl}) {
         @content;
+    }
+}
+
+@mixin height-custom {
+    @media (max-height: #{$breakpoint-height}) {
+        .section {
+            height: 80vh;
+        }
     }
 }
 

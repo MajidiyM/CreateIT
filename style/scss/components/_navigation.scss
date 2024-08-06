@@ -3,11 +3,11 @@
 }
 @include xl-more {
   .section {
-    height: 85vh;
+    height: 80vh;
     position: relative;
-    .fp-slides {
-      height: 93%;
-    }
+    // .fp-slides {
+    //   height: 93%;
+    // }
 
     .fp-controlArrow {
       top: 92%;
@@ -37,7 +37,14 @@
       display: flex;
       width: 100%;
       justify-content: center;
+      
       ul {
+        background-color: white;
+        display: flex;
+        align-items: center;
+        background-color: $background-color;
+        border: 1px solid $primary-color;
+        border-radius: 15px;
         li {
           a {
             span {
@@ -53,9 +60,9 @@
   .section {
     height: 85vh;
     position: relative;
-    .fp-slides {
-      height: 93%;
-    }
+    // .fp-slides {
+    //   height: 93%;
+    // }
 
     .fp-controlArrow {
       top: 92%;
@@ -81,11 +88,17 @@
 
     .fp-slidesNav {
       position: absolute;
-      bottom: 10px;
+      bottom: 15px;
       display: flex;
       width: 100%;
       justify-content: center;
       ul {
+        background-color: white;
+        display: flex;
+        align-items: center;
+        background-color: $background-color;
+        border: 1px solid $primary-color;
+        border-radius: 15px;
         li {
           a {
             span {
@@ -102,9 +115,9 @@
   .section {
     height: 85vh;
     position: relative;
-    .fp-slides {
-      height: 93%;
-    }
+    // .fp-slides {
+    //   height: 93%;
+    // }
 
     .fp-controlArrow {
       top: 92%;

@@ -48,7 +48,7 @@ p {
     flex-grow: 1;
   }
   .desktop .navbar .logo a img {
-    width: 140px;
+    width: 120px;
   }
   .desktop .navbar .navbar-body {
     flex-grow: 2;
@@ -190,7 +190,7 @@ p {
     color: black;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .desktop {
     display: none;
   }
@@ -263,11 +263,8 @@ form button {
 
 @media (min-width: 1200px) {
   .section {
-    height: 85vh;
+    height: 80vh;
     position: relative;
-  }
-  .section .fp-slides {
-    height: 93%;
   }
   .section .fp-controlArrow {
     top: 92%;
@@ -294,6 +291,14 @@ form button {
     display: flex;
     width: 100%;
     justify-content: center;
+  }
+  .section .fp-slidesNav ul {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    background-color: rgb(24, 24, 24);
+    border: 1px solid #fa7b2b;
+    border-radius: 15px;
   }
   .section .fp-slidesNav ul li a span {
     background: #fa7b2b;
@@ -304,9 +309,6 @@ form button {
     height: 85vh;
     position: relative;
   }
-  .section .fp-slides {
-    height: 93%;
-  }
   .section .fp-controlArrow {
     top: 92%;
   }
@@ -328,10 +330,18 @@ form button {
   }
   .section .fp-slidesNav {
     position: absolute;
-    bottom: 10px;
+    bottom: 15px;
     display: flex;
     width: 100%;
     justify-content: center;
+  }
+  .section .fp-slidesNav ul {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    background-color: rgb(24, 24, 24);
+    border: 1px solid #fa7b2b;
+    border-radius: 15px;
   }
   .section .fp-slidesNav ul li a span {
     background: #fa7b2b;
@@ -342,9 +352,6 @@ form button {
     height: 85vh;
     position: relative;
   }
-  .section .fp-slides {
-    height: 93%;
-  }
   .section .fp-controlArrow {
     top: 92%;
   }
@@ -375,7 +382,7 @@ form button {
     background: #fa7b2b;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .section {
     height: 100vh;
   }
@@ -384,6 +391,158 @@ form button {
   }
 }
 @media (min-width: 1200px) {
+  .home {
+    padding: 0;
+    margin: 0;
+  }
+  .home .home-hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .home .home-hero .mini-logo {
+    width: 100%;
+    text-align: center;
+  }
+  .home .home-hero .hero-title {
+    margin: 10px 0 0 0;
+    text-align: center;
+  }
+  .home .home-hero .hero-title h1 {
+    color: #fa7b2b;
+    font-size: 12.875rem;
+    line-height: 1.1em;
+    font-weight: 700;
+  }
+  .home .home-descr {
+    display: flex;
+    align-items: center;
+    height: 300px;
+  }
+  .home .home-descr .home-descr-title {
+    width: 60%;
+    margin: auto;
+  }
+  .home .home-descr .home-descr-title h1 {
+    color: #fa7b2b;
+    font-size: 3rem;
+    font-weight: 700;
+  }
+  .home .home-descr .home-descr-title p {
+    color: #ffffff;
+    font-size: 1.25rem;
+    line-height: 1.5em;
+  }
+  .home .img-divider {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 300px;
+  }
+  .home .img-divider img {
+    width: 70px;
+  }
+  .home .home-advantages {
+    width: 100%;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    place-content: center;
+  }
+  .home .home-advantages .home-advantages-descr {
+    align-items: flex-start;
+    display: flex;
+    flex-flow: column;
+    gap: 20px;
+    width: 31%;
+  }
+  .home .home-advantages .home-advantages-descr h2 {
+    color: #fa7b2b;
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  .home .home-advantages .home-advantages-descr p {
+    color: #ffffff;
+  }
+  .home .home-services {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    margin-top: 50px;
+  }
+  .home .home-services .home-card {
+    padding: 20px;
+    border: 1px solid #fa7b2b;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+  }
+  .home .home-services .home-card .home-card-image {
+    flex-grow: 1;
+    margin-bottom: 5px;
+  }
+  .home .home-services .home-card .home-card-image img {
+    width: 250px;
+    height: 300px;
+  }
+  .home .home-services .home-card .home-card-descr {
+    flex-grow: 1;
+    width: 250px;
+    padding: 20px 10px;
+  }
+  .home .home-services .home-card .home-card-descr h3 {
+    color: #ffffff;
+  }
+  .home .footer {
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    gap: 20px;
+    height: 300px;
+  }
+  .home .footer .footer-text {
+    text-align: center;
+  }
+  .home .footer .footer-text h2 {
+    color: #fa7b2b;
+    font-size: 48px;
+    font-weight: 700;
+  }
+  .home .footer .footer-text p {
+    width: 400px;
+    margin: auto;
+    color: #ffffff;
+    line-height: 1.5em;
+  }
+  .home .footer .footer-buttons {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 20px;
+  }
+  .home .footer .footer-buttons .footer-start-button {
+    all: unset;
+    background: none;
+    color: #fa7b2b;
+    border-radius: 15px;
+    border: 1px solid #fa7b2b;
+    padding: 10px 20px;
+  }
+  .home .footer .footer-buttons .footer-more-button {
+    all: unset;
+    background: none;
+    color: #ffffff;
+    padding: 15px;
+    border-radius: 15px;
+    border: 1px solid #ffffff;
+    padding: 10px 20px;
+  }
+}
+@media (max-width: 1200px) {
   .home {
     padding: 0;
     margin: 0;
@@ -450,7 +609,6 @@ form button {
   .home .home-advantages .home-advantages-descr {
     align-items: flex-start;
     display: flex;
-    flex-flow: column;
     gap: 20px;
     width: 31%;
   }
@@ -467,8 +625,10 @@ form button {
     width: 100%;
     justify-content: space-evenly;
     margin-top: 40px;
+    flex-wrap: wrap;
   }
   .home .home-services .home-card {
+    margin: 20px 0;
     padding: 20px;
     border: 1px solid #fa7b2b;
     display: flex;
@@ -535,22 +695,122 @@ form button {
     padding: 10px 20px;
   }
 }
-@media (max-width: 1200px) {
-  .home h1 {
-    color: #ffffff;
-    text-align: center;
-  }
-}
 @media (max-width: 992px) {
-  .home h1 {
-    color: #ffffff;
-    text-align: center;
+  .home .home-hero .hero-title h1 {
+    font-size: 10rem;
+  }
+  .home .home-advantages {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 0;
+  }
+  .home .home-advantages .home-advantages-img {
+    flex-grow: 1;
+    display: flex;
+    width: 50%;
+    justify-content: center;
+  }
+  .home .home-advantages .home-advantages-img img {
+    width: 70%;
+  }
+  .home .home-advantages .home-advantages-descr {
+    flex-grow: 1;
+    display: flex;
+    flex-flow: row;
+    width: 50%;
+    justify-content: center;
+  }
+  .home .home-advantages .home-advantages-descr .home-advantages-descr-sec {
+    width: 71%;
+  }
+  .home .home-advantages .home-advantages-descr .home-advantages-descr-sec h2 {
+    font-size: 1.5rem;
   }
 }
-@media (max-width: 768px) {
-  .home h1 {
-    color: #ffffff;
+@media (max-width: 767px) {
+  .home .home-hero .hero-title h1 {
+    font-size: 7rem;
+  }
+  .home .home-descr {
+    justify-content: center;
+    width: 100%;
+  }
+  .home .home-descr .home-descr-title {
+    margin: 0;
+    width: 69%;
     text-align: center;
+    justify-content: center;
+  }
+  .home .home-descr .home-descr-title h1 {
+    font-size: 2rem;
+  }
+  .home .home-descr .home-descr-title p {
+    text-align: left;
+    font-size: 1rem;
+  }
+  .home .home-advantages .home-advantages-descr .home-advantages-descr-sec h2 {
+    font-size: 1.25rem;
+  }
+  .home .home-advantages .home-advantages-descr .home-advantages-descr-sec p {
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 576px) {
+  .home .home-hero {
+    height: 100vh;
+  }
+  .home .home-hero .mini-logo img {
+    width: 200px;
+  }
+  .home .home-hero .hero-title h1 {
+    font-size: 4rem;
+  }
+  .home .home-descr {
+    margin: 30px 0;
+    height: auto;
+  }
+  .home .home-descr .home-descr-title {
+    width: 100%;
+    padding: 10px;
+  }
+  .home .home-descr .home-descr-title h1 {
+    font-size: 1.5rem;
+  }
+  .home .home-descr .home-descr-title p {
+    font-size: 0.9rem;
+    padding: 0px 27px;
+  }
+  .home .home-advantages {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .home .home-advantages .home-advantages-descr {
+    flex-grow: 1;
+  }
+  .home .home-advantages .home-advantages-descr .home-advantages-descr-sec {
+    width: 100%;
+    padding: 20px;
+  }
+  .home .home-advantages .home-advantages-img {
+    width: 100%;
+    flex-grow: 1;
+  }
+  .home .img-divider {
+    height: 30%;
+  }
+  .home .img-divider img {
+    width: 50px;
+  }
+  .home .footer {
+    height: 40%;
+  }
+  .home .footer .footer-text h2 {
+    font-size: 1.5rem;
+  }
+  .home .footer .footer-text p {
+    font-size: 0.9rem;
+    width: 100%;
   }
 }
 @media (min-width: 1200px) {
