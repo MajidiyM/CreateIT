@@ -1135,6 +1135,157 @@ form button {
     font-size: 1.3rem;
   }
 }
+@media (max-width: 1200px) {
+  .portfolio {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+  }
+  .portfolio .portfolio-hero {
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .portfolio .portfolio-hero .portfolio-hero-title {
+    color: #fa7b2b;
+    width: 65%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+  }
+  .portfolio .portfolio-hero .portfolio-hero-title h1 {
+    font-size: 9rem;
+    font-weight: 700;
+  }
+  .portfolio .portfolio-hero .portfolio-hero-title h3 {
+    font-size: 3rem;
+  }
+  .portfolio .portfolio-descr {
+    height: 300px;
+    display: flex;
+    align-items: center;
+  }
+  .portfolio .portfolio-descr .portfolio-descr-title {
+    width: 60%;
+    margin: auto;
+  }
+  .portfolio .portfolio-descr .portfolio-descr-title h1 {
+    color: #fa7b2b;
+    font-size: 3rem;
+    font-weight: 700;
+  }
+  .portfolio .portfolio-descr .portfolio-descr-title p {
+    color: #ffffff;
+    font-size: 1.25rem;
+    line-height: 1.5em;
+  }
+  .portfolio .portfolio-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+  }
+  .portfolio .portfolio-grid .portfolio-grid-item {
+    padding: 10px;
+  }
+  .portfolio .portfolio-grid .portfolio-grid-item .portfolio-grid-item-img {
+    margin-bottom: 10px;
+  }
+  .portfolio .portfolio-grid .portfolio-grid-item .portfolio-grid-item-img img {
+    width: 250px;
+    height: 300px;
+  }
+  .portfolio .portfolio-grid .portfolio-grid-item .portfolio-grid-item-title h2 {
+    color: #fa7b2b;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .portfolio .img-divider {
+    display: flex;
+    width: 90%;
+    height: 300px;
+    margin: auto;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .portfolio .img-divider img {
+    width: 70px;
+  }
+  .portfolio .portfolio-highlights {
+    text-align: center;
+    width: 40%;
+    margin: auto;
+    display: flex;
+    flex-flow: column;
+    gap: 10px;
+    height: 300px;
+  }
+  .portfolio .portfolio-highlights h2 {
+    color: #fa7b2b;
+    font-weight: 700;
+    font-size: 2.5rem;
+  }
+  .portfolio .portfolio-highlights p {
+    color: #ffffff;
+    font-size: 1.3rem;
+  }
+}
+@media (max-width: 992px) {
+  .portfolio .portfolio-hero .portfolio-hero-title {
+    width: 60%;
+  }
+  .portfolio .portfolio-hero .portfolio-hero-title h1 {
+    font-size: 5rem;
+  }
+  .portfolio .portfolio-hero .portfolio-hero-img img {
+    width: 90%;
+  }
+  .portfolio .portfolio-highlights {
+    width: 55%;
+  }
+}
+@media (max-width: 767px) {
+  .portfolio .portfolio-hero {
+    height: 100vh;
+    flex-flow: column-reverse;
+  }
+  .portfolio .portfolio-hero .portfolio-hero-title {
+    text-align: center;
+  }
+  .portfolio .portfolio-descr .portfolio-descr-title h1 {
+    font-size: 2rem;
+  }
+  .portfolio .portfolio-highlights {
+    width: 60%;
+  }
+}
+@media (max-width: 576px) {
+  .portfolio .portfolio-hero .portfolio-hero-title {
+    width: 100%;
+  }
+  .portfolio .portfolio-hero .portfolio-hero-title h1 {
+    font-size: 4rem;
+  }
+  .portfolio .portfolio-descr .portfolio-descr-title {
+    width: 90%;
+  }
+  .portfolio .portfolio-highlights {
+    width: 80%;
+  }
+  .portfolio .img-divider img {
+    width: 50px;
+  }
+  .portfolio .portfolio-highlights h2 {
+    font-size: 2rem;
+  }
+  .portfolio .portfolio-highlights p {
+    font-size: 1rem;
+  }
+}
 @media (min-width: 1200px) {
   .contacts {
     padding: 0;
